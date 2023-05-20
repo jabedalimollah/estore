@@ -1,0 +1,137 @@
+.main {
+  width: 100%;
+  padding-top: 100px;
+  box-sizing: border-box;
+  padding-bottom: 90px;
+}
+.contact_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contact_me_div {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  height: 100px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 1.2rem; */
+  color: grey;
+  border-radius: 10px;
+}
+.contact_me_div:hover {
+  transform: scale(1.1);
+}
+.contact_website {
+  color: grey;
+}
+.contact_icons {
+  font-size: 1.6rem;
+  margin-right: 6px;
+}
+.map_box {
+  height: 50vh;
+  width: 100%;
+}
+.map_div {
+  width: 100%;
+  height: 100%;
+}
+.form_box {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form_div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.input_box {
+  border: 2px solid rgb(191, 190, 190);
+  padding: 5px 10px;
+  outline: none;
+  margin: 10px 0;
+}
+.send_btn {
+  border: none;
+  background-color: orange;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(85, 85, 85);
+}
+.send_btn:hover {
+  transform: scale(0.9);
+}
+
+/* ============== Tablets and Desktop ============= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* tablets and desktop */
+  .contact_me_div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* height: 70px; */
+    height: 48px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    color: grey;
+    border-radius: 10px;
+  }
+  .contact_icons {
+    font-size: 0.9rem;
+    margin-right: 6px;
+  }
+}
+
+/* ============== Phone ================ */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .contact_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .contact_me_div {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    height: 100px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: grey;
+    border-radius: 10px;
+    /* padding: 0px 9px; */
+    width: 80%;
+    margin: 13px 0px !important;
+  }
+  .contact_me {
+    margin-bottom: 18px;
+  }
+  /* .map_box {
+    height: 50vh;
+    width: 100%;
+    padding: 0px 53px;
+    box-sizing: border-box;
+  } */
+  .form_div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+}

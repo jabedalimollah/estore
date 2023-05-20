@@ -1,0 +1,765 @@
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* background-color: rgb(209, 206, 206); */
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile_box {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 30px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+.picture_div {
+  width: 30%;
+  height: 200px;
+  /* border: 2px solid black; */
+}
+.picture_box {
+  /* height: 200px; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* border: 2px solid black; */
+  /* border-radius: 50%; */
+}
+.upload_picture_text {
+  color: black !important;
+}
+.camera_icon {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+.profile_Edit_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.profile_info {
+  width: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.profile_info_title {
+  font-weight: bold;
+}
+.edit_btn {
+  border: none;
+  background-color: skyblue;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  color: rgb(69, 69, 69);
+  border-radius: 7px;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+}
+.close_btn {
+  border: none;
+  background-color: rgb(222, 77, 101);
+  padding: 5px 20px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
+  font-weight: bold;
+}
+.save_btn {
+  border: none;
+  background-color: rgb(50, 132, 31);
+  padding: 5px 20px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  color: rgb(255, 252, 252);
+  border-radius: 7px;
+  font-weight: bold;
+}
+.edit_btn:hover {
+  background-color: rgb(67, 119, 140);
+  color: white;
+}
+.line_div {
+  width: 100%;
+  border-bottom: 2px solid black;
+  margin: 8px 0;
+}
+.profile_info_box {
+  width: 100%;
+  font-weight: bold;
+  color: gray;
+}
+.profile_label {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.profile_label_title {
+  width: 30%;
+  /* border: 2px solid black; */
+}
+.profile_label_value {
+  width: 60%;
+}
+.logout_div {
+  width: 100%;
+  margin: 9px 0;
+}
+.logout_btn {
+  padding: 7px 20px;
+  border: none;
+  background-color: rgb(222, 77, 101);
+  border-radius: 9px;
+  color: white;
+}
+.logout_btn:hover {
+  background-color: rgb(169, 52, 72);
+}
+.deleteAcc_div {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.deleteAcc_btn {
+  /* background-color: pink; */
+  background-color: transparent;
+  border: 2px solid brown;
+  color: brown;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.deleteAcc_btn:hover {
+  background-color: rgb(222, 77, 101);
+  color: white;
+}
+.input_box {
+  /* border: none; */
+  padding: 2px 8px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid black;
+}
+.date_input {
+  border-radius: 7px;
+  padding: 2px 9px;
+  border: 1px solid black;
+}
+.address_textarea {
+  padding: 2px 8px;
+  border-radius: 7px;
+  border: 1px solid black;
+  outline: none;
+}
+.gender_text {
+  text-transform: capitalize;
+}
+.submain {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_box {
+  width: 20%;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.463);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.image_div {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(231, 193, 123);
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+}
+.image_file {
+  /* visibility: hidden; */
+  display: none;
+  /* position: relative; */
+  z-index: 4;
+}
+.upload_image_style {
+  width: 100%;
+  text-align: center;
+  color: black !important;
+  /* border: 2px solid black; */
+}
+.pic_view_box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.578);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pic_view_div {
+  width: 30%;
+  height: 400px;
+  /* border: 2px solid white; */
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+}
+.pic_view {
+  width: 100%;
+  height: 70%;
+  margin-top: 10px;
+}
+.pic_close_btn {
+  border: none;
+  padding: 10px 20px;
+  background-color: rgb(223, 87, 110);
+  margin-top: 30px;
+  color: white;
+  border-radius: 5px;
+}
+.pic_close_btn:hover {
+  background-color: rgb(200, 48, 73);
+}
+.logout_box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.578);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout_div_box {
+  width: 30%;
+  height: 150px;
+  /* border: 2px solid white; */
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(250, 252, 254, 0.941);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logout_button_group {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logout_button_yes {
+  border: none;
+  background-color: rgb(251, 109, 132);
+  color: white;
+  padding: 6px 25px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.logout_button_yes:hover {
+  background-color: rgb(235, 59, 88);
+}
+.logout_button_no {
+  border: none;
+  background-color: rgb(166, 225, 252);
+  color: rgb(0, 0, 0);
+  padding: 6px 25px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.logout_button_no:hover {
+  background-color: rgb(79, 179, 225);
+}
+.delete_div_box {
+  width: 35%;
+  height: 200px;
+  /* border: 2px solid white; */
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgba(250, 252, 254, 0.941);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.setting_div {
+  width: 100%;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+}
+.setting_btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 78px;
+  outline: none;
+}
+.setting_btn:hover {
+  color: red;
+}
+.input_div,
+.textarea_div {
+  width: 57%;
+}
+.input_box,
+.address_textarea {
+  /* border: none; */
+  padding: 7px 8px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid black;
+  width: 100%;
+}
+.delete_box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.delete_subbox {
+  width: 30%;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.delete_form {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.delete_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.delete_message {
+  font-size: 0.9rem;
+  color: rgb(56, 55, 55);
+  margin-top: 4px;
+}
+.password_div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  /* width: 75%; */
+}
+.password_input {
+  border: 2px solid black;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  /* width: 100%; */
+}
+.button_group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+.backBtn {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 6px;
+  background-color: skyblue;
+}
+.backBtn:hover {
+  background-color: rgb(112, 175, 200);
+}
+.confirm_btn {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 6px;
+  background-color: orange;
+}
+.confirm_btn:hover {
+  background-color: rgb(192, 130, 15);
+}
+.password_warning {
+  color: red;
+  font-size: 0.9rem;
+  margin-left: 3px;
+  margin-top: 2px;
+}
+/* ============== Tablets and Desktop ============= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* tablets and desktop */
+  .main {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* background-color: rgb(209, 206, 206); */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile_box {
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  }
+  .logout_div_box {
+    width: 50%;
+    height: 150px;
+    /* border: 2px solid white; */
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(250, 252, 254, 0.941);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .delete_div_box {
+    width: 59%;
+    height: 200px;
+    /* border: 2px solid white; */
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(250, 252, 254, 0.941);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .image_box {
+    width: 40%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.463);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .pic_view_div {
+    width: 52%;
+    height: 476px;
+    /* border: 2px solid white; */
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+    padding: 0px 13px;
+  }
+
+  .profile_label_title {
+    width: 39%;
+    /* border: 2px solid black; */
+  }
+  .input_box {
+    /* border: none; */
+    padding: 7px 8px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid black;
+    width: 100%;
+  }
+  .input_div {
+    width: 53%;
+    /* padding: -2px 0px; */
+  }
+  .textarea_div {
+    width: 53%;
+  }
+  .address_textarea {
+    padding: 2px 8px;
+    border-radius: 7px;
+    border: 1px solid black;
+    outline: none;
+    width: 100%;
+  }
+  .profile_box {
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  }
+  .delete_subbox {
+    width: 54%;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+/* ============== Phone ================ */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .profile_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 10px;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+    box-shadow: none;
+
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  }
+  .profile_label_title {
+    width: 45%;
+    /* /* border: 2px solid black;  */
+  }
+  .logout_div_box {
+    width: 85%;
+    height: 150px;
+    /* border: 2px solid white; */
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(250, 252, 254, 0.941);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .delete_div_box {
+    width: 88%;
+    height: 202px;
+    /* border: 2px solid white; */
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(250, 252, 254, 0.941);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input_box {
+    /* border: none; */
+    width: 98%;
+    padding: 7px 8px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid black;
+  }
+  .textarea_div {
+    width: 62%;
+  }
+  .address_textarea {
+    padding: 2px 8px;
+    border-radius: 7px;
+    border: 1px solid black;
+    outline: none;
+    width: 99%;
+  }
+  .input_div {
+    width: 47%;
+  }
+  .picture_div {
+    width: 72%;
+    height: 236px;
+    margin-bottom: 25px;
+    /* border: 2px solid black; */
+  }
+  .image_box {
+    width: 72%;
+    /* padding: 40px; */
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.463);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .image_div {
+    width: 95%;
+    margin: 10px 0;
+    padding: 14px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(231, 193, 123);
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    /* color: black; */
+  }
+  .pic_view_div {
+    width: 85%;
+    height: 400px;
+    /* border: 2px solid white; */
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .profile_label {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 16px 0;
+    padding: 14px 9px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    /* border: 2px solid; */
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+  .profile_label_title {
+    width: 45%;
+    color: #171344;
+  }
+  .profile_label_value {
+    width: 60%;
+    color: #5e5858;
+  }
+  .profile_info {
+    width: 100%;
+    /* padding-left: 20px; */
+    box-sizing: border-box;
+    padding: 0px 9px;
+  }
+  .input_div {
+    width: 100%;
+  }
+  .input_box {
+    /* border: none; */
+    width: 100%;
+    padding: 7px 8px;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid black;
+    margin-top: 5px;
+  }
+  .textarea_div {
+    width: 100%;
+  }
+  .address_textarea {
+    padding: 2px 8px;
+    border-radius: 7px;
+    border: 2px solid black;
+    outline: none;
+    width: 100%;
+    margin-top: 5px;
+  }
+  .main {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    /* background-color: rgb(209, 206, 206); */
+    /* height: 100vh
+vh
+; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .delete_subbox {
+    width: 87%;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .delete_message {
+    font-size: 0.8rem;
+    color: rgb(56, 55, 55);
+    margin-top: 4px;
+  }
+  .delete_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .password_text {
+    font-size: 0.9rem;
+  }
+}

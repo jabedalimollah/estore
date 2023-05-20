@@ -1,0 +1,56 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submain {
+  width: 30%;
+  height: 300px;
+  /* border: 2px solid black; */
+}
+.pic_box {
+  width: 100%;
+  height: 80%;
+  /* border: 2px solid red; */
+}
+.lottie_pic {
+  width: 100%;
+  height: 100%;
+}
+.btn_div {
+  width: 100%;
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-top: 20px;
+}
+.go_to_home {
+  /* color: black; */
+  color: rgb(222, 98, 119);
+  padding: 10px 20px;
+  /* background-color: pink; */
+  border: 2px solid rgb(222, 98, 119);
+  border-radius: 5px;
+  /* font-weight: bold; */
+}
+.go_to_home:hover {
+  background-color: pink;
+  color: black;
+  border: none;
+}
+/* ============== Tablets and Desktop ============= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* tablets and desktop */
+}
+
+/* ============== Phone ================ */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .submain {
+    width: 74%;
+    height: 300px;
+    /* border: 2px solid black; */
+  }
+}

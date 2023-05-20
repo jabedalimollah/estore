@@ -1,0 +1,445 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding-top: 100px;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submain {
+  width: 30%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.setting_box {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.setting_title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px !important;
+}
+.change_email,
+.change_password {
+  width: 60%;
+  height: 40px;
+  margin: 7px 0;
+  border: none;
+  background-color: orange;
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(54, 54, 54);
+}
+.back_btn {
+  border: none;
+  background-color: transparent;
+}
+.back_btn:hover {
+  color: brown;
+}
+/* =============== Change Email Address ====================== */
+.email_change_box {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.email_change_div {
+  width: 30%;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.email_form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.change_email_title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px !important;
+}
+.password_text {
+  color: rgb(69, 69, 69);
+}
+.input_div {
+  width: 100%;
+  border: 2px solid gray;
+
+  border-radius: 5px;
+}
+.password_input_box {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 4px 9px;
+  width: 90%;
+}
+.button_group_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.email_change_back_btn,
+.email_change_next_btn {
+  width: 80px;
+  height: 35px;
+  border: none;
+  background-color: orange;
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(69, 67, 67);
+}
+.email_change_back_btn:hover,
+.email_change_next_btn:hover {
+  background-color: rgb(211, 140, 7);
+}
+.fonget_password_style {
+  color: gray;
+  margin-bottom: 11px;
+}
+.password_hide {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: gray;
+}
+.password_warning_style {
+  color: red;
+  margin-left: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+/* ================== Eamil Change Component ================ */
+.email_change_component {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.email_change_component_box {
+  width: 30%;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.email_form_box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.update_email_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0 !important;
+}
+.email_div {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+.email_input {
+  width: 100%;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.update_btn_style {
+  width: 100%;
+  height: 35px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: brown;
+  color: white;
+}
+.update_btn_style:hover {
+  background-color: rgb(140, 37, 37);
+}
+.cancel_btn_style {
+  width: 100%;
+  /* height: 35px; */
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+}
+.email_valid_warning {
+  color: brown;
+  margin-left: 4px;
+  font-size: 0.9rem;
+}
+
+/* ================ Change Password Component ================== */
+.change_password_component {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.password_change_box {
+  width: 30%;
+  /* height: 300px; */
+  padding: 30px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.change_password_form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.change_password_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0 !important;
+}
+.change_password_div {
+  border: 2px solid gray;
+  width: 100%;
+  padding: 1px 6px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.password_box {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  width: 90%;
+}
+.require_start {
+  color: red;
+}
+
+.passowrd_input_div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 6px 0;
+  color: rgb(57, 56, 56);
+}
+.visible_btn {
+  border: none;
+  background-color: transparent;
+  color: rgb(69, 69, 69);
+  font-size: 1.3rem;
+}
+.password_warning {
+  color: brown;
+  margin-left: 3px;
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+/* ============== Tablets and Desktop ============= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* tablets and desktop */
+  .submain {
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .change_email,
+  .change_password {
+    width: 60%;
+    height: 44px;
+    margin: 7px 0;
+    border: none;
+    background-color: orange;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+  }
+  .email_change_div {
+    /* width: 68%; */
+    width: 60%;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .password_change_box {
+    width: 74%;
+    /* height: 300px; */
+    padding: 30px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .email_change_component_box {
+    width: 60%;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+/* ============== Phone ================ */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .submain {
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-top: -180px;
+  }
+  .change_email,
+  .change_password {
+    width: 85%;
+    height: 46px;
+    margin: 7px 0;
+    border: none;
+    background-color: orange;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+  }
+  .password_change_box {
+    width: 86%;
+    /* height: 300px; */
+    padding: 30px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .change_password_form {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .email_change_div {
+    width: 88%;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: -120px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  .email_form {
+    width: 87%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .email_change_component_box {
+    width: 88%;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -120px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .email_form_box {
+    width: 87%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

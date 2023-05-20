@@ -1,0 +1,163 @@
+.footer {
+  width: 100%;
+}
+.first_div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.first_div_box {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: rgb(246, 246, 246);
+  position: absolute;
+  bottom: -35px;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btn_common {
+  border: none;
+  background-color: orange;
+  padding: 7px 14px;
+  color: white;
+}
+.btn_common:hover {
+  background-color: rgb(189, 125, 6);
+}
+.second_div {
+  width: 100%;
+  background-color: rgb(6, 6, 22);
+  color: rgb(189, 188, 188);
+  padding-top: 100px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second_box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.follow_us_div {
+  margin-bottom: 10px;
+}
+.social_media_link {
+  /* width: 40px;
+  height: 40px; */
+  border-radius: 50%;
+  color: rgb(189, 188, 188);
+  border: 2px solid rgb(189, 188, 188);
+  margin-right: 15px;
+  padding: 9px;
+}
+.social_media_link:hover {
+  color: black;
+  background-color: rgb(189, 188, 188);
+}
+.email_box {
+  border: none;
+  outline: none;
+  padding: 4px 16px;
+  box-sizing: border-box;
+}
+.line {
+  width: 100%;
+  margin: 15px 0;
+  border-bottom: 1px solid rgb(189, 188, 188);
+}
+.footer_title {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+/* ============== Tablets and Desktop ============= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* tablets and desktop */
+  .second_box {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+
+/* ============== Phone ================ */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .first_div_box {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-color: rgb(246, 246, 246);
+    position: absolute;
+    bottom: -29px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 0.6rem;
+  }
+  .second_box {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .follow_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  .social_media_wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .social_media_link {
+    border-radius: 50%;
+    color: rgb(189, 188, 188);
+    border: 2px solid rgb(189, 188, 188);
+    /* margin-right: 15px; */
+    margin: 0 10px;
+    /* padding: 10px; */
+    font-size: 1.3rem;
+    width: 50px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe_box {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .subscribe_title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px !important;
+  }
+  .call_div {
+    width: 100%;
+    text-align: center;
+  }
+  .email_box {
+    border: none;
+    outline: none;
+    padding: 4px 16px;
+    box-sizing: border-box;
+    width: 64%;
+  }
+}

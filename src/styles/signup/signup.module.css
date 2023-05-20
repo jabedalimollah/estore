@@ -1,0 +1,264 @@
+.main {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  box-sizing: border-box;
+  /* background-color: skyblue; */
+  /* background-image: url("https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png"); */
+  /* background-image: url("https://cdn.pixabay.com/photo/2017/06/23/10/48/code-2434271_960_720.jpg"); */
+  /* background-image: url("https://cdn.pixabay.com/photo/2020/03/19/21/25/laptop-4948837_960_720.jpg"); */
+  /* background-image: url("https://cdn.pixabay.com/photo/2016/11/29/06/18/apple-1867762_960_720.jpg"); */
+  /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.form_box {
+  width: 100%;
+  background-color: white;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.423) 0px 3px 8px;
+  /* border: 1px solid white; */
+}
+.login_title {
+  font-weight: bold;
+  margin-bottom: 4px;
+  /* color: rgb(203, 202, 202); */
+  color: rgb(36, 35, 35);
+}
+.form_value_box {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0;
+  width: 60%;
+  box-sizing: border-box;
+}
+.form_data_wrapper {
+  /* border: 1px solid rgb(203, 202, 202); */
+  border: 1px solid rgb(36, 35, 35);
+  border-radius: 7px;
+}
+.icons_style {
+  padding: 7px;
+  color: rgb(36, 35, 35);
+}
+.input_box {
+  box-sizing: border-box;
+  padding: 6px 10px;
+  outline: none;
+  /* border: 1px solid gray; */
+  border: none;
+  background-color: transparent;
+  border-radius: 7px;
+  color: rgb(36, 35, 35);
+  width: 78%;
+}
+.password_hiden {
+  color: rgb(36, 35, 35);
+  /* padding: 0 3px; */
+  padding-left: 2px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.gender_style {
+  margin-right: 20px;
+}
+.eye_icon {
+  color: gray;
+}
+.invalid_user {
+  color: brown;
+  font-size: 0.8rem;
+  padding: 3px 6px;
+  box-sizing: border-box;
+}
+.login_btn {
+  margin: 9px 0;
+  width: 60%;
+  padding: 6px 0;
+  box-sizing: border-box;
+  background-color: rgb(211, 107, 124);
+  border: none;
+  border-radius: 7px;
+  color: white;
+}
+.login_btn:hover {
+  transform: scale(0.9);
+}
+.or_div {
+  width: 60%;
+  height: 1px;
+  background-color: rgb(36, 35, 35);
+  margin: 30px 0;
+  position: relative;
+}
+.or_title {
+  background-color: white;
+  /* background-color: transparent; */
+  /* background-color: rgb(74, 74, 74); */
+  position: absolute;
+  top: -15px;
+  left: 45%;
+  padding: 5px;
+  border: 1px solid rgb(36, 35, 35);
+  border-radius: 10px;
+  /* color: gray; */
+  color: rgb(36, 35, 35);
+  font-size: 0.6rem;
+}
+.sign_up_page {
+  /* color: white; */
+  color: rgb(89, 86, 86);
+  /* text-transform: uppercase; */
+}
+.forget_password_box {
+  margin: 4px 0;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+/* .checkbox_style {
+    accent-color: red;
+    padding: 3px;
+    border: 2px solid black;
+  } */
+.log_in_pic {
+  /* background-image: url("https://img.freepik.com/free-vector/dispatchers-client-support-call-center-composition-with-view-male-agent-working-place-with-question-mark-vector-illustration_1284-66834.jpg?w=740&t=st=1683975608~exp=1683976208~hmac=3baefa9bef5845e8e166ce6c090306ba7429375baf664d1d4804a738b6e1434b");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+  height: 60%;
+}
+.login_lottie {
+  height: 80%;
+}
+.date_input {
+  border-radius: 7px;
+  padding: 2px 9px;
+  border: 1px solid black;
+}
+.dob_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  color: rgb(36, 35, 35);
+}
+
+/* ============== Tablets and Desktop ============= */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* tablets and desktop */
+  .main {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(238, 238, 238); */
+    background-color: white;
+    box-sizing: border-box;
+    /* background-color: skyblue; */
+    /* background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2017/06/23/10/48/code-2434271_960_720.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2020/03/19/21/25/laptop-4948837_960_720.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2016/11/29/06/18/apple-1867762_960_720.jpg); */
+  }
+  .form_value_box {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    width: 94%;
+    box-sizing: border-box;
+  }
+  .form_data_wrapper {
+    /* border: 1px solid rgb(203, 202, 202); */
+    border: 1px solid rgb(36, 35, 35);
+    border-radius: 7px;
+    padding: 3px 3px;
+  }
+  .login_btn {
+    margin: 9px 0;
+    width: 94%;
+    padding: 6px 0;
+    box-sizing: border-box;
+    background-color: rgb(211, 107, 124);
+    border: none;
+    border-radius: 7px;
+    color: white;
+  }
+  .or_div {
+    width: 93%;
+    height: 1px;
+    background-color: rgb(36, 35, 35);
+    margin: 30px 0;
+    position: relative;
+  }
+}
+
+/* ============== Phone ================ */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .main {
+    width: 100%;
+    padding-top: 34px;
+    padding-bottom: 50px;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    box-sizing: border-box;
+    /* background-color: skyblue; */
+    /* background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_960_720.png); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2017/06/23/10/48/code-2434271_960_720.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2020/03/19/21/25/laptop-4948837_960_720.jpg); */
+    /* background-image: url(https://cdn.pixabay.com/photo/2016/11/29/06/18/apple-1867762_960_720.jpg); */
+  }
+  .form_value_box {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+    width: 94%;
+    box-sizing: border-box;
+  }
+  .login_btn {
+    margin: 9px 0;
+    width: 94%;
+    padding: 6px 0;
+    box-sizing: border-box;
+    background-color: rgb(211, 107, 124);
+    border: none;
+    border-radius: 7px;
+    color: white;
+  }
+  .or_div {
+    width: 92%;
+    height: 1px;
+    background-color: rgb(36, 35, 35);
+    margin: 30px 0;
+    position: relative;
+  }
+  .sign_up_page {
+    /* color: white; */
+    color: rgb(89, 86, 86);
+    /* text-transform: uppercase; */
+    font-size: 0.9rem;
+  }
+}
