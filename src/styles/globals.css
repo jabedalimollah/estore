@@ -49,3 +49,6 @@ h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.active {
+  color: orangered !important;
+}

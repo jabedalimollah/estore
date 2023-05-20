@@ -693,7 +693,8 @@
     color: #171344;
   }
   .profile_label_value {
-    width: 60%;
+    /* width: 60%; */
+    width: 100%;
     color: #5e5858;
   }
   .profile_info {

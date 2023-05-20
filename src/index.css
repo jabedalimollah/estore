@@ -93,3 +93,8 @@ h6 {
   z-index: 2;
   position: relative;
 }
+
+.active {
+  /* color: orangered !important; */
+  color: orangered;
+}

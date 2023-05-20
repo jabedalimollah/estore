@@ -50,9 +50,14 @@ const Home = () => {
                 <div className={styles.basic_text}>Welcome to</div>
                 <h5 className={styles.hero_section_title}>EStore</h5>
                 <p className={styles.hero_section_para}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
                   dicta soluta cumque magnam iste, hic architecto impedit veniam
-                  est necessitatibus repellendus autem!
+                  est necessitatibus repellendus autem! */}
+                  This is my e-commerce website. Here you can buy all kinds of
+                  electronics gadgets and accessories. If you are shopping from
+                  our website for the first time then you will get a heavy
+                  discount. If you buy our products regularly then you will be
+                  given prime membership.
                 </p>
 
                 <Link to={"/products"} className={styles.shop_now_btn}>

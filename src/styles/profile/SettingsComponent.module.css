@@ -286,7 +286,8 @@
 .visible_btn {
   border: none;
   background-color: transparent;
-  color: rgb(69, 69, 69);
+  /* color: rgb(69, 69, 69); */
+  color: rgb(139 135 135);
   font-size: 1.3rem;
 }
 .password_warning {

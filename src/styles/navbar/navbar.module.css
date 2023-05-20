@@ -202,6 +202,9 @@
   .mobile_navbar_ul {
     list-style: none;
     text-align: center;
+    margin-top: -156px;
+    margin-left: -26px;
+    box-sizing: border-box;
   }
   .mobile_navbar_list {
     margin: 10px;

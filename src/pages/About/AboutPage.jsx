@@ -23,12 +23,18 @@ const AboutPage = () => {
               <h5 className={styles.about_us_title}>About Us</h5>
               <p className={styles.about_us_text}>This is Ecommours Website</p>
               <p className={styles.about_us_description}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Officiis commodi placeat ullam tenetur, ut deserunt nostrum.
                 Error eum, quibusdam culpa velit aperiam vitae ullam quia cumque
                 similique praesentium. Fuga dolores perferendis molestias dolor
                 repellat dignissimos accusantium amet, sapiente beatae facere
-                quia nam incidunt minima maxime.
+                quia nam incidunt minima maxime. */}
+                You can buy products from this e-commerce website. You can do
+                Product Search and sort by price, brand and category. This is a
+                responsive website. You can create new account if account is not
+                created. If you have forgotten the password, you can also do the
+                Forget Password. No database is used for this website. Your
+                information will be stored in your device's local storage.
               </p>
             </div>
             <div className="col-md-6">
@@ -65,15 +71,22 @@ const AboutPage = () => {
         <div className="container">
           <div className="row px-5 d-flex justify-content-center align-items-center">
             <div className={`col-md-5 ${styles.containt_box}`}>
-              <h5 className={styles.about_us_title}>About Us</h5>
-              <p className={styles.about_us_text}>This is Ecommours Website</p>
+              <h5 className={styles.about_us_title}>Technologies</h5>
+              <p className={styles.about_us_text}>E-Store Website</p>
               <p className={styles.about_us_description}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Officiis commodi placeat ullam tenetur, ut deserunt nostrum.
                 Error eum, quibusdam culpa velit aperiam vitae ullam quia cumque
                 similique praesentium. Fuga dolores perferendis molestias dolor
                 repellat dignissimos accusantium amet, sapiente beatae facere
-                quia nam incidunt minima maxime.
+                quia nam incidunt minima maxime. */}
+                I made this e-commerce website for my own practice purpose. I am
+                collecting the product pictures from flipkart and I am
+                collecting the animated pictures from lottiefiles. Many thanks
+                to flipkart and lottiefiles. All the technologies that I have
+                used to make this website are:- React js, Css3, Javascript,
+                Bootstrap, React router dom, React redux, Redux toolkit, and
+                React Icons etc.
               </p>
             </div>
             <div className="col-md-6">

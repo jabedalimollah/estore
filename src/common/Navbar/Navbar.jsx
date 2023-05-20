@@ -3,7 +3,8 @@ import styles from "../../styles/navbar/navbar.module.css";
 import { FaUserCircle } from "react-icons/fa";
 import { BsCart2 } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
 const Navbar = () => {
   const [navbarCondition, setNavbarCondition] = useState(false);
   const [auth, setAuth] = useState(null);
@@ -47,30 +48,36 @@ const Navbar = () => {
               </Link>
             </li> */}
             <li className={styles.navbar_list}>
-              <Link className={styles.navbar_link} to={"/"}>
+              <NavLink className={styles.navbar_link} to={"/"}>
                 Home
-              </Link>
+              </NavLink>
+              {/* <Link className={styles.navbar_link} to={"/"}>
+                Home
+              </Link> */}
             </li>
             <li className={styles.navbar_list}>
-              <Link className={styles.navbar_link} to={"/about"}>
+              <NavLink className={styles.navbar_link} to={"/about"}>
                 About
-              </Link>
+              </NavLink>
+              {/* <Link className={styles.navbar_link} to={"/about"}>
+                About
+              </Link> */}
             </li>
             <li className={styles.navbar_list}>
-              <Link className={styles.navbar_link} to={"/products"}>
+              <NavLink className={styles.navbar_link} to={"/products"}>
                 Product
-              </Link>
+              </NavLink>
             </li>
             <li className={styles.navbar_list}>
-              <Link className={styles.navbar_link} to={"/contact"}>
+              <NavLink className={styles.navbar_link} to={"/contact"}>
                 Contact
-              </Link>
+              </NavLink>
             </li>
             {login1.condition ? (
               <li className={styles.navbar_list}>
-                <Link className={styles.navbar_link} to={"/profile"}>
+                <NavLink className={styles.navbar_link} to={"/profile"}>
                   Profile
-                </Link>
+                </NavLink>
               </li>
             ) : (
               <li className={styles.navbar_list}>
@@ -131,50 +138,93 @@ const Navbar = () => {
           >
             <ul className={styles.mobile_navbar_ul}>
               <li className={styles.mobile_navbar_list}>
-                <Link className={styles.mobile_navbar_link} to={"/"}>
+                <NavLink
+                  className={styles.mobile_navbar_link}
+                  to={"/"}
+                  onClick={() => setNavbarCondition(!navbarCondition)}
+                >
                   Home
-                </Link>
+                </NavLink>
+                {/* <Link className={styles.mobile_navbar_link} to={"/"}>
+                  Home
+                </Link> */}
               </li>
               <li className={styles.mobile_navbar_list}>
-                <Link className={styles.mobile_navbar_link} to={"/about"}>
+                <NavLink
+                  className={styles.mobile_navbar_link}
+                  to={"/about"}
+                  onClick={() => setNavbarCondition(!navbarCondition)}
+                >
                   About
-                </Link>
+                </NavLink>
+                {/* <Link className={styles.mobile_navbar_link} to={"/about"}>
+                  About
+                </Link> */}
               </li>
               <li className={styles.mobile_navbar_list}>
-                <Link className={styles.mobile_navbar_link} to={"/products"}>
+                <NavLink
+                  className={styles.mobile_navbar_link}
+                  to={"/products"}
+                  onClick={() => setNavbarCondition(!navbarCondition)}
+                >
                   Product
-                </Link>
+                </NavLink>
+                {/* <Link className={styles.mobile_navbar_link} to={"/products"}>
+                  Product
+                </Link> */}
               </li>
               <li className={styles.mobile_navbar_list}>
-                <Link className={styles.mobile_navbar_link} to={"/contact"}>
+                <NavLink
+                  className={styles.mobile_navbar_link}
+                  to={"/contact"}
+                  onClick={() => setNavbarCondition(!navbarCondition)}
+                >
                   Contact
-                </Link>
+                </NavLink>
+                {/* <Link className={styles.mobile_navbar_link} to={"/contact"}>
+                  Contact
+                </Link> */}
               </li>
               {login1.condition ? (
                 <li className={styles.mobile_navbar_list}>
-                  <Link className={styles.mobile_navbar_link} to={"/profile"}>
+                  <NavLink
+                    className={styles.mobile_navbar_link}
+                    to={"/profile"}
+                    onClick={() => setNavbarCondition(!navbarCondition)}
+                  >
                     Profile
-                  </Link>
+                  </NavLink>
+                  {/* <Link className={styles.mobile_navbar_link} to={"/profile"}>
+                    Profile
+                  </Link> */}
                 </li>
               ) : (
                 <li className={styles.mobile_navbar_list}>
-                  <Link className={styles.mobile_navbar_link} to={"/login"}>
+                  <NavLink
+                    className={styles.mobile_navbar_link}
+                    to={"/login"}
+                    onClick={() => setNavbarCondition(!navbarCondition)}
+                  >
                     Log in
-                  </Link>
+                  </NavLink>
+                  {/* <Link className={styles.mobile_navbar_link} to={"/login"}>
+                    Log in
+                  </Link> */}
                 </li>
               )}
 
               <li className={styles.mobile_navbar_list}>
-                <Link
+                <NavLink
                   className={`${styles.mobile_navbar_link}, ${styles.mobile_navbar_cart}`}
                   to={"/cart"}
+                  onClick={() => setNavbarCondition(!navbarCondition)}
                 >
                   <BsCart2 className={styles.mobile_cart_icon} />
 
                   <span className={styles.mobile_cart_count}>
                     {count.length}
                   </span>
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
