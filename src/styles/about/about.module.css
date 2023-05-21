@@ -227,9 +227,18 @@
       rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin: 20px 20px;
     border-radius: 10px;
-    animation-name: _example_16ry0_1;
+    animation-name: example1;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+  }
+  @keyframes example {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.9);
+      /* transform: scale(0.8); */
+    }
   }
 }

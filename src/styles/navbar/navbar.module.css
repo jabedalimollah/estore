@@ -83,7 +83,8 @@
 }
 .hamburger_menu {
   margin-left: 100px;
-  width: 50px;
+  /* width: 50px; */
+  width: 29px;
   height: 50px;
   /* border: 2px solid black; */
   display: flex;
@@ -92,26 +93,30 @@
 }
 .hamburger_menu_firstLine {
   width: 100%;
-  height: 5px;
+  /* height: 5px; */
+  height: 4px;
   background-color: black;
   transition: all 1s;
 }
 .hamburger_menu_secondLine {
   display: inline-block;
   width: 100%;
-  height: 5px;
+  /* height: 5px; */
+  height: 4px;
   background-color: black;
   margin: 4px 0;
 }
 .hamburger_menu_thirdLine {
   width: 100%;
-  height: 5px;
+  /* height: 5px; */
+  height: 4px;
   background-color: black;
   transition: all 1s;
 }
 .hamburger_menu_firstLine1 {
   width: 100%;
-  height: 5px;
+  /* height: 5px; */
+  height: 4px;
   background-color: black;
   transition: all 1s;
   transform: rotate(45deg);
@@ -121,14 +126,16 @@
   /* visibility: hidden; */
   display: none;
   width: 100%;
-  height: 5px;
+  height: 4px;
+  /* height: 5px; */
   background-color: black;
   margin: 3px 0;
 }
 .hamburger_menu_thirdLine3 {
   transform: rotate(-45deg);
   width: 100%;
-  height: 5px;
+  height: 4px;
+  /* height: 5px; */
   margin-top: -4px;
   background-color: black;
   transition: all 1s;
@@ -150,7 +157,8 @@
   }
   .hamburger_menu {
     margin-left: 100px;
-    width: 34px;
+    /* width: 34px; */
+    width: 29px;
     height: 50px;
     /* border: 2px solid black; */
     display: flex;
